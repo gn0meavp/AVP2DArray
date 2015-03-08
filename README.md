@@ -8,6 +8,7 @@ Simple 2D Array in Objective-C
 - Enumeration with blocks supported
 - Thread safe
 - Unit tested
+- Conforms to NSCoding / NSCopying protocols
  
 ## TODO
 
