@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AVP2DArray : NSObject <NSCopying, NSCoding>
+@interface AVP2DArray : NSObject <NSCopying, NSCoding, NSFastEnumeration>
 
 @property (nonatomic, readonly) NSUInteger width;
 @property (nonatomic, readonly) NSUInteger height;

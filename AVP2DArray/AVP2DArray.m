@@ -107,6 +107,12 @@
     [encoder encodeObject:self.array forKey:@"array"];
 }
 
+#pragma mark - NSFastEnumeration protocol methods
+
+- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(id __unsafe_unretained [])buffer count:(NSUInteger)len {
+    return [self.array countByEnumeratingWithState:state objects:buffer count:len];
+}
+
 #pragma mark - access methods
 
 - (NSUInteger)indexForX:(NSUInteger)x y:(NSUInteger)y {

@@ -180,8 +180,8 @@
     
     NSUInteger k = 0;
     
-    for (int i=0;i<width;i++) {
-        for (int j=0;j<height;j++) {
+    for (int j=0;j<height;j++) {
+        for (int i=0;i<width;i++) {
             NSMutableString *object = [NSMutableString stringWithFormat:@"%lu", k];
             [array addObject:object atX:i y:j];
             k++;
