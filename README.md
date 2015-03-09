@@ -12,4 +12,4 @@ Simple 2D Array in Objective-C
  
 ## TODO
 
-- Fast enumeration
+- Rewrite in Swift with easy access array[x,y]
