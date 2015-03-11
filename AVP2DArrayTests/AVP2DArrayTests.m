@@ -85,6 +85,9 @@
         for (int j=0;j<height;j++) {
             XCTAssert([array objectAtX:i y:j] == row[k], @"array must return the same objects which were appended %@ should be %@",
                       [array objectAtX:i y:j], row[k]);
+            
+            XCTAssert([array objectAtX:i y:j] == [array objectAtPoint:CGPointMake(i, j)], @"array must return the same value for methods objectAtX:y: and objectAtPoint");
+            
             k++;
         }
     }

@@ -28,6 +28,8 @@
                    emptyObject:(id)emptyObject;
 
 - (id)objectAtX:(NSUInteger)x y:(NSUInteger)y;
+- (id)objectAtPoint:(CGPoint)point;
+
 - (void)addObject:(id)obj atX:(NSUInteger)x y:(NSUInteger)y;
 
 - (void)enumerateObjectsUsingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block;

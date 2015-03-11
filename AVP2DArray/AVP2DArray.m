@@ -132,6 +132,10 @@
     return object;
 }
 
+- (id)objectAtPoint:(CGPoint)point {
+    return [self objectAtX:point.x y:point.y];
+}
+
 - (void)addObject:(id)obj atX:(NSUInteger)x y:(NSUInteger)y {
     dispatch_barrier_async(self.queue, ^{
         self.array[[self indexForX:x y:y]] = obj;
